@@ -6,6 +6,7 @@ specifiers:
   '@babel/plugin-transform-react-jsx': ^7.14.9
   '@radix-ui/react-hover-card': ^1.0.6
   '@radix-ui/react-scroll-area': ^1.0.4
+  '@radix-ui/react-separator': ^1.0.3
   '@radix-ui/react-slot': ^1.0.2
   '@types/react': ^18.2.15
   '@types/react-dom': ^18.2.7
@@ -28,6 +29,7 @@ specifiers:
   postcss: ^8.4.27
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-draggable: ^4.4.5
   shadcn-ui: ^0.3.0
   tailwind-merge: ^1.14.0
   tailwindcss: ^3.3.3
@@ -42,6 +44,7 @@ dependencies:
   '@babel/plugin-transform-react-jsx': 7.22.5_@babel+core@7.22.9
   '@radix-ui/react-hover-card': 1.0.6_fnrvimhhml6lvqlvghdjxbhtmm
   '@radix-ui/react-scroll-area': 1.0.4_fnrvimhhml6lvqlvghdjxbhtmm
+  '@radix-ui/react-separator': 1.0.3_fnrvimhhml6lvqlvghdjxbhtmm
   '@radix-ui/react-slot': 1.0.2_fzrd6ivowi4azn3madm57eamia
   class-variance-authority: 0.7.0
   clsx: 2.0.0
@@ -49,6 +52,7 @@ dependencies:
   lucide-react: 0.263.1_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-draggable: 4.4.5_biqbaboplfbrettd7655fr4n2y
   shadcn-ui: 0.3.0
   tailwind-merge: 1.14.0
   tailwindcss-animate: 1.0.6_tailwindcss@3.3.3
@@ -2073,6 +2077,27 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
+  /@radix-ui/react-separator/1.0.3_fnrvimhhml6lvqlvghdjxbhtmm:
+    resolution: {integrity: sha512-itYmTy/kokS21aiV5+Z56MZB54KrhPgn6eHDKkFeOLR34HMN2s8PaN47qZZAGnvupcjxHaFZnW4pQEh0BvvVuw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.22.6
+      '@radix-ui/react-primitive': 1.0.3_fnrvimhhml6lvqlvghdjxbhtmm
+      '@types/react': 18.2.18
+      '@types/react-dom': 18.2.7
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /@radix-ui/react-slot/1.0.2_fzrd6ivowi4azn3madm57eamia:
     resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
     peerDependencies:
@@ -2791,6 +2816,11 @@ packages:
   /clone/1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /clsx/2.0.0:
@@ -4487,6 +4517,18 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-draggable/4.4.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==}
+    peerDependencies:
+      react: '>= 16.3.0'
+      react-dom: '>= 16.3.0'
+    dependencies:
+      clsx: 1.2.1
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-is/16.13.1:
